@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>interactive</title>
+    <link rel="icon" href="./assets/favicon-32x32.png" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="./main.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="small-div">
+        <h1>Simple, traffic-based pricing</h1>
+        <p class="sign-up">
+          Sign-up for our 30-day trial. No credit card required.
+        </p>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="bill">
+          <p class="pageviewers">100K PAGEVIEWS</p>
+          <input
+            type="range"
+            min="8"
+            max="36"
+            step="4"
+            value="14"
+            id="slider"
+          />
+          <div class="slider-div"></div>
+
+          <div class="price">
+            <img id="icon-dollar" src="./assets/icon-dollar.svg" />
+            <p class="dollar">00.00</p>
+            <p class="month">/ month</p>
+            <p class="year">/ yearly</p>
+          </div>
+          <div class="billing">
+            <p class="monthly">Monthly Billing</p>
+            <label class="slider">
+              <input type="checkbox" id="checkbox" />
+              <span class="slider-toggle"></span>
+            </label>
+            <p class="yearly">Yearly Billing</p>
+            <div class="twentyfive percent">-25%</div>
+            <div class="discount percent">25% discount</div>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="last">
+          <div class="box">
+            <div class="div">
+              <img id="check" src="./assets/icon-check.svg" />
+              <p class="describe">Unlimited websites</p>
+            </div>
+            <div class="div">
+              <img id="check" src="./assets/icon-check.svg" />
+              <p class="describe">100% data ownership</p>
+            </div>
+            <div class="div">
+              <img id="check" src="./assets/icon-check.svg" />
+              <p class="describe">Email reports</p>
+            </div>
+          </div>
+          <button id="trial">Start my trial</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
